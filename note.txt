@@ -1,2 +1,1 @@
-Your file currently uses Linux-style line endings (LF), but on Windows I will convert them to Windows-style (CRLF).
-another line
+"Line C: 3rd line" 
