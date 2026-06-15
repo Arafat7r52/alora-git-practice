@@ -1,4 +1,9 @@
-this project is for practicing basic git features
-another line
-features:
-sum, subtract, divide, power
+# Git Practice Project
+
+This project is for practicing basic Git features.
+
+## Features
+- Sum
+- Subtract
+- Divide
+- Power
