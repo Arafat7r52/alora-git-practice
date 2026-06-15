@@ -1,6 +1,6 @@
 # Git Practice Project
 
-This project is for practicing basic Git features.
+This project is for practicing basic Git & Github actions.
 
 ## Features
 - Sum
