@@ -5,6 +5,9 @@
 # ============================================================
 
 # functions
+import math
+
+
 def add(a, b):
     return sum([a, b]);
 
@@ -39,3 +42,23 @@ def power(base, exp):
 
 def modulo(a, b):
     return a % b;
+
+def sqrt(n):
+    """
+    Returns the square root of n.
+
+    Args:
+        n (int | float): The number to find the square root of.
+
+    Returns:
+        float: Square root of n.
+
+    Raises:
+        ValueError: If n is negative.
+        TypeError: If n is not a number.
+    """
+    if not isinstance(n, (int, float)):
+        raise TypeError("n must be a number")
+    if n < 0:
+        raise ValueError("Cannot take square root of a negative number")
+    return math.sqrt(n)
