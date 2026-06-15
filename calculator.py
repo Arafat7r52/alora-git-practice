@@ -17,7 +17,25 @@ def multiply(a, b):
 def divide(a, b):
     return a / b;
 def power(base, exp):
-    return base ** exp;
+    """
+    Raises base to the power of exp.
+
+    Args:
+        base (int | float): The base number.
+        exp (int): The exponent.
+
+    Returns:
+        float: Result of base ** exp.
+
+    Raises:
+        ValueError: If exp is negative.
+        TypeError: If inputs are not numbers.
+    """
+    if not isinstance(base, (int, float)) or not isinstance(exp, (int, float)):
+        raise TypeError("base and exp must be numbers")
+    if exp < 0:
+        raise ValueError("Negative exponents are not supported")
+    return base ** exp
 
 def modulo(a, b):
     return a % b;
