@@ -40,9 +40,6 @@ def power(base, exp):
         raise ValueError("Negative exponents are not supported")
     return base ** exp
 
-def modulo(a, b):
-    return a % b;
-
 def sqrt(n):
     """
     Returns the square root of n.
@@ -62,3 +59,19 @@ def sqrt(n):
     if n < 0:
         raise ValueError("Cannot take square root of a negative number")
     return math.sqrt(n)
+
+def modulo(a, b):
+    """
+    Returns the remainder of a divided by b.
+
+    Args:
+        a (int | float): Dividend.
+        b (int | float): Divisor.
+
+    Raises:
+        ZeroDivisionError: If b is zero.
+    """
+    if b == 0:
+        raise ZeroDivisionError("divisor cannot be zero")
+    return a % b
+
