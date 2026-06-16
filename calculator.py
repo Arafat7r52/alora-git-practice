@@ -18,7 +18,25 @@ def multiply(a, b):
     return a * b;
 
 def divide(a, b):
-    return a / b;
+    """
+    Divides a by b.
+
+    Args:
+        a (int | float): Dividend.
+        b (int | float): Divisor.
+
+    Returns:
+        float: Result of a divided by b.
+
+    Raises:
+        ZeroDivisionError: If b is zero.
+        TypeError: If inputs are not numbers.
+    """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("inputs must be numbers")
+    if b == 0:
+        raise ZeroDivisionError("cannot divide by zero")
+    return a / b
 def power(base, exp):
     """
     Raises base to the power of exp.
