@@ -9,7 +9,17 @@ import math
 
 
 def add(a, b):
-    return sum([a, b]);
+    """
+    Returns the sum of a and b.
+
+    Args:
+        a (int | float): First number.
+        b (int | float): Second number.
+
+    Returns:
+        float: Sum of a and b.
+    """
+    return a + b
 
 def subtract(a, b):
     return a - b
